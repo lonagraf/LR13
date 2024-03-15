@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       android:orientation="vertical"
+       android:gravity="center">
+
+
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите заголовок"
+        android:inputType="text"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/loadAnimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Загрузить случайное аниме"
+        android:layout_below="@id/titleEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        />
+
+       <TextView
+           android:id="@+id/characterTextView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text=""
+           android:textSize="18sp"
+           android:layout_below="@id/loadAnimeButton"
+           android:layout_marginTop="16dp"
+           android:padding="16dp"
+           android:layout_gravity="center" />
+
+       <TextView
+           android:id="@+id/quoteTextView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text=""
+           android:textSize="18sp"
+           android:layout_below="@id/characterTextView"
+           android:layout_marginTop="8dp"
+           android:padding="16dp"/>
+
+   </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
